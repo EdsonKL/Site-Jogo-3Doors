@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div id="main">
+      <div class="textMain">
+        <h1>Ajude a melhorar nosso game</h1>
+        <p>
+          Sua experiência é crucial para nós! Encontre algo que não está certo
+          ou tem uma ideia para tornar 3Doors: O Casarão ainda melhor? Envie seu
+          feedback e ajude-nos a aperfeiçoar cada detalhe deste universo
+          misterioso.
+        </p>
+      </div>
+      <div class="formBox">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js" integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="module" src="script.js"></script>
+        <form action="">
+          <div class="emailBox">
+            <label for="email">E-mail</label>
+            <input
+              placeholder="email@contato.com"
+              type="email"
+              name="email"
+              id="email"
+            />
+            <div class="alertText close" id="alertText">
+              <img src="../../assets/icons/exclamation.png" alt="" srcset="" />
+              <p>Campo Obrigatório</p>
+            </div>
+          </div>
+          <div class="rateBox">
+            <label for="rating">Qual sua avaliação?</label>
+            <div class="estrelas">
+              <input
+                type="radio"
+                id="cm_star-empty"
+                name="fb"
+                value=""
+                checked
+              />
+              <label for="cm_star-1"><i class="fa"></i></label>
+              <input type="radio" id="cm_star-1" name="fb" value="1" />
+              <label for="cm_star-2"><i class="fa"></i></label>
+              <input type="radio" id="cm_star-2" name="fb" value="2" />
+              <label for="cm_star-3"><i class="fa"></i></label>
+              <input type="radio" id="cm_star-3" name="fb" value="3" />
+              <label for="cm_star-4"><i class="fa"></i></label>
+              <input type="radio" id="cm_star-4" name="fb" value="4" />
+              <label for="cm_star-5"><i class="fa"></i></label>
+              <input type="radio" id="cm_star-5" name="fb" value="5" />
+            </div>
+          </div>
+          <div class="textAreaBox">
+            <label for="textarea">Descreva seu problema</label>
+            <textarea
+              name="textarea"
+              id="textarea"
+              placeholder="Nos conte mais sobre o que encontrou"
+            ></textarea>
+            <div class="secondAlertText close" id="secondAlertText">
+              <img src="../../assets/icons/exclamation.png" alt="" srcset="" />
+              <p>Campo Obrigatório</p>
+            </div>
+          </div>
+          <button id="buttonReport" type="">Reportar</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
