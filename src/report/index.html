@@ -9,9 +9,49 @@
     />
 
     <link rel="stylesheet" href="style.css" />
-    <title>Home</title>
+    <title>3Doors: Reportar </title>
   </head>
   <body>
+    <header>
+      <nav class = "nav-bar">
+        <div class="logo">
+          <img class="logo__jogo" src="/frontend-secti/frontend-secti/assets/images/logo.png" alt="Logo do Jogo">
+      </div>
+
+
+          <div class="nav-list">
+              <ul>
+                  <li class="nav-item"> <a href="/frontend-secti/frontend-secti/src/home/index.html" class="nav-link">Início</a></li>
+                  <li class="nav-item"> <a href="/frontend-secti/frontend-secti/src/curiosities/index.html" class="nav-link">História</a></li>
+                  <li class="nav-item"> <a href="/frontend-secti/frontend-secti/src/devs/index.html" class="nav-link">Desenvolvedores</a></li>
+                  <li class="nav-item"> <a href="/frontend-secti/frontend-secti/src/report/index.html" class="nav-link">Reportar</a></li>
+              </ul>
+          </div>
+
+          <div class="login__button">
+              <button class="login__button__cadastrar"><a href="#">Cadastre-se</a></button>
+              <button class="login__button__entrar"><a href="#">Login</a></button>
+          </div>
+
+          <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="/frontend-secti/frontend-secti/assets/images/menu_white_36dp.svg" alt=""></button>
+          </div>
+      </nav>
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item"> <a href="/frontend-secti/frontend-secti/src/home/index.html" class="nav-link">Início</a></li>
+          <li class="nav-item"> <a href="/frontend-secti/frontend-secti/src/curiosities/index.html" class="nav-link">História</a></li>
+          <li class="nav-item"> <a href="/frontend-secti/frontend-secti/src/devs/index.html" class="nav-link">Desenvolvedores</a></li>
+          <li class="nav-item"> <a href="/frontend-secti/frontend-secti/src/report/index.html" class="nav-link">Reportar</a></li>
+      </ul>
+
+          <div class="login__button">
+              <button class="login__button__cadastrar"><a href="#">Cadastre-se</a></button>
+              <button class="login__button__entrar"><a href="#">Login</a></button>
+          </div>
+
+      </div>
+  </header>
     <div id="main">
       <div class="textMain">
         <h1>Ajude a melhorar nosso game</h1>
