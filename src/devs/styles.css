@@ -9,6 +9,156 @@ body {
    
 }
 
+/*  */
+header {
+    background-color: #211232;
+  }
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    height: 45px;
+    background-color: #211232;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo__jogo {
+    width: 250px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  .nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  .nav-item {
+    margin: 0 15px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .nav-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-weight: 400;
+  }
+  
+  .login__button__cadastrar {
+    border: none;
+    background-color: #7F32C0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  .login__button__cadastrar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 1.3rem;
+    font-family: "Poppins", sans-serif;;
+  }
+  
+  .login__button__entrar {
+    border: none;
+    background-color: #211232;
+    border: 2px solid #7F32C0;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-right: 0;
+  }
+  
+  .icon {
+    color: #ffffff;
+    font-size: 3rem;
+  }
+  .login__button__entrar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 1.3rem;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .mobile-menu-icon {
+    display: none;
+  }
+  
+  .mobile-menu {
+    display: none; 
+  }
+  
+  @media screen and (max-width: 1260px) {
+    .nav-bar {
+        padding: 4rem 6rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo__jogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .login__button__cadastrar {
+        display: none;
+    }
+    .login__button__entrar {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+    }
+    .mobile-menu-icon button {
+        background-color:#211232;
+        border: none;
+        cursor: pointer;
+        padding: 30px;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.4rem;
+        font-size: 26px;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+}
+  
+  /*  */
+
 .apresentacao-conteudo-1{
     width: 100%;
     display: flex;
