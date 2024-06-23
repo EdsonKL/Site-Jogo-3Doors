@@ -1,11 +1,4 @@
-// {
-//     "name": "string",
-//     "email": "string",
-//     "password": "string",
-//     "city": "string",
-//     "state": "string",
-//     "age": "string"
-//   }
+
 
 const buttonSignup = document.getElementById("buttonSignup");
 
@@ -150,6 +143,7 @@ async function Signup() {
 // 
 function menuShow() {
   let menuMobile = document.querySelector('.mobile-menu');
+  console.log("chegou aqui")
   if (menuMobile.classList.contains('open')) {
       menuMobile.classList.remove('open');
       document.querySelector('.icon').src = "/frontend-secti-main/assets/images/menu_white_36dp.svg";
