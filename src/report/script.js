@@ -31,9 +31,8 @@ function getUserFromHTML() {
   };
   document.getElementById("email").value = ""
   document.getElementById("textarea").value = ""
-  console.log(body);
-
-  // fazPost(body);
+  document.getElementById("buttonReport").innerText = "Enviado"
+  fazPost(body);
 }
 
 async function fazPost(body) {

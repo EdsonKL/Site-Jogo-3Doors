@@ -2,8 +2,8 @@ import express from "express";
 import { Resend } from "resend";
 import cors from "cors";
 const app = express();
-app.use(cors());
 app.use(express.json());
+app.use(cors());
 
 // instancia da lib de envio de email
 // deve-se criar uma variavel de ambiente para o código
@@ -28,3 +28,4 @@ app.post("/sendmail", async (req, res) => {
 
 // criação server
 app.listen(3000);
+
