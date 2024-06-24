@@ -10,6 +10,7 @@
  --cor-tercearia: #32134e;
  --cor-quartenaria:#D9D9D9;
  --cor-quinta:#D9D9D9;
+ --cor-sete:#7f32c0;
 
 
 
@@ -24,7 +25,7 @@ body {
 }
 
 .apresentacao-conteudo-1 {
- margin: 13% 0%;
+ margin: 13% 3%;
 }
 
 .apresentacao-titulo {
@@ -46,15 +47,15 @@ body {
 
 
 .contener-imagem-dourada{
- margin: 2% 0%;
+ margin: 4% 0%;
 }
 
 
 .apresentacao-conteudo-2 {
     margin: 5% 0%;
- display: flex;
- flex-direction: column;
- width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
  }
 
 
@@ -66,14 +67,26 @@ body {
  display: flex;
  justify-content: space-between;
  align-self: center;
+ box-shadow: 0px 5px 30px rgba(227, 242, 226, 0.3);
 
- img{
-    width: 100%;
- }
+}
+
+.contener-imagem {
+    width: 50%;
+    overflow: visible;
+    position: relative;
+    margin: -50px auto;
+    img {
+        width: 400px;
+        position: absolute;
+        top: -20px;
+        left: -8px;
+    }
 }
 
 .contener-texto {
-    margin: 8%;
+    width: 50%;
+    margin: 5%;
     text-align: left;
 
 }
@@ -94,8 +107,28 @@ body {
     color: var(--cor-quinta);
 }
 
+.div-iniciar{
+    margin: 4%;
+    width: 18vh;
+    height: 7vh;
+    background-color: var(--cor-sete);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iniciar-jogo{
+    font-family: var(--fonte-primaria);
+    color: var(--cor-quartenaria);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
 .apresentacao-conteudo-3 {
     margin: 8% 0%;
+    display: flex;
+    flex-direction:column ;
+    align-self: center;
 
 }
 .apresentacao-titulo-3 {
@@ -112,10 +145,11 @@ body {
     font-weight: 400;
     font-size: 1.33rem;
     color: var(--cor-quinta);
+
 }
 
 .cards-horizotal {
-    width: 100%;
+    width: 80%;
     margin: 8% 0%;
     display: flex;
     justify-content: space-between;
@@ -124,10 +158,10 @@ body {
 }
 
 .card {
+    width: 100%;
     display: flex;
-    flex-grow: 1;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
 }
 
 .card-1 {
@@ -135,6 +169,10 @@ body {
     height: 48vh;
     background-color: var(--cor-tercearia);
     border-radius: 30px;
+    img {
+        width: 320px;
+        height: 350px;
+    }
 }
 
 .imagem-lenda {
@@ -144,7 +182,11 @@ body {
     align-self: stretch;
 }
 
-.nome-dev {
+.div-text-lenda {
+    margin: 0% 10%;
+}
+
+.nome-lenda {
     margin: 3%;
     color: var(--cor-quartenaria);
 }
@@ -160,12 +202,30 @@ body {
         width: 100%;
     }
     .contener-grande{
-        width: 100vh;
-        height: 50vh;
+        width: 80vh;
+        height: 45vh;
 
-        img{
-            width: 60%;
+
+     
+    }
+    .contener-imagem {
+        width: 50%;
+        overflow: visible;
+        position: relative;
+        margin: -50px auto;
+        img {
+            width: 300px;
+            position: absolute;
+            top: -20px;
+            left: -8px;
         }
+    }
+    
+    .apresentacao-titulo-2{
+        font-size: 1.6rem;
+    }
+    .apresentacao-paragrafo-2{
+        font-size: 1.1rem;
     }
     .cards-horizotal {
         display: grid;
@@ -179,21 +239,70 @@ body {
     .card-1 {
         width: 28vh;
         height: 38vh;
+
+        img {
+            width: 220px;
+            height: 250px;
+        }
     }
     .imagem-lenda {
         width: 50%;
     }
+    .nome-dev {
+        margin: 3%;
+        font-size: 1.5rem;
+
+    }
+    
+    .info-lenda {
+        margin: 2% 20%;
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 700px){
+    .apresentacao-titulo {
+        font-size: 2.5rem;
+    }
+    .apresentacao-paragrafo{
+        font-size: 1.2rem;
+    }
+    .imagem-dourada{
+        width: 200px;
+    }
+    .apresentacao-conteudo-1{
+        margin:20% 5%;
+    }
+    .apresentacao-conteudo-2{
+        margin:15% 2% ;
+    }
+    .apresentacao-titulo-3{
+        margin: 0% 5%;
+        font-size: 2rem;
+    }
+    .apresentacao-paragrafo-3{
+        margin: 0% 5%;
+        font-size: 1.2rem;
+    }
+
     .contener-grande{
         width: 40vh;
-        height: 80vh;
+        height: 65vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
     }
+    .contener-imagem {
+        width: 50%;
+    
+        img {
+            width: 200px;
+        }
+    }
+    .contener-texto{
+        width: 80%;
+    }
+    
     .cards-horizotal {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -202,6 +311,16 @@ body {
         img{
             width: 100%;
         }
+    }
+    .nome-lenda {
+        margin: 3%;
+        font-size: 1.3rem;
+
+    }
+    
+    .info-lenda {
+        margin: 2% 15%;
+        font-size: 1rem;
     }
 
 }
