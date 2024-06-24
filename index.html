@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/home/style.css" />
-    <link rel="stylesheet" href="./src/home/styleHeader.css">
+    <link rel="stylesheet" href="./src/home/styleHeader.css" />
     <title>3Doors: O Casarão</title>
   </head>
   <body>
@@ -24,10 +24,14 @@
               <a href="./index.html" class="nav-link">Início</a>
             </li>
             <li class="nav-item">
-              <a href="./src/curiosities/index.html" class="nav-link">História</a>
+              <a href="./src/curiosities/index.html" class="nav-link"
+                >História</a
+              >
             </li>
             <li class="nav-item">
-              <a href="./src/devs/index.html" class="nav-link">Desenvolvedores</a>
+              <a href="./src/devs/index.html" class="nav-link"
+                >Desenvolvedores</a
+              >
             </li>
             <li class="nav-item">
               <a href="./src/report/index.html" class="nav-link">Reportar</a>
@@ -154,7 +158,7 @@
       <div class="formBox">
         <form action="">
           <div class="nameBox">
-            <label for="name">Diga seu Nome</label>
+            <label for="name">Nome</label>
             <input
               placeholder="Anna Jansen"
               type="text"
@@ -193,75 +197,87 @@
             </div>
           </div>
           <div class="addressBox">
-            <label for="state">Diga seu estado</label>
-            <select id="state" name="state">
-              <option selected value="MA">MA</option>
-              <option value="PI">PI</option>
-              <option value="AL">AL</option>
-              <option value="AC">AC</option>
-              <option value="AP">AP</option>
-              <option value="AM">AM</option>
-              <option value="BA">BA</option>
-              <option value="CE">CE</option>
-              <option value="DF">DF</option>
-              <option value="ES">ES</option>
-              <option value="GO">GO</option>
-              <option value="MT">MT</option>
-              <option value="MS">MS</option>
-              <option value="MG">MG</option>
-              <option value="PA">PA</option>
-              <option value="PB">PB</option>
-              <option value="PR">PR</option>
-              <option value="PE">PE</option>
-              <option value="RJ">RJ</option>
-              <option value="RN">RN</option>
-              <option value="RS">RS</option>
-              <option value="RO">RO</option>
-              <option value="RR">RR</option>
-              <option value="SC">SC</option>
-              <option value="SP">SP</option>
-              <option value="SE">SE</option>
-              <option value="TO">TO</option>
-            </select>
-            <div class="alertText close" id="alertState">
-              <img src="./assets/icons/exclamation.png" alt="" srcset="" />
-              <p>Estado Obrigatório</p>
+            <div class="stateBox">
+              <label for="state">Diga seu estado</label>
+              <select id="state" name="state">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA" selected>Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+              </select>
+              <div class="alertText close" id="alertState">
+                <img src="./assets/icons/exclamation.png" alt="" srcset="" />
+                <p>Estado Obrigatório</p>
+              </div>
             </div>
-            <label for="city">Qual sua cidade?</label>
-            <input
-              placeholder="Digite o nome de sua cidade"
-              type="text"
-              class="city"
-              id="city"
-            />
-            <div class="alertText close" id="alertCity">
-              <img src="./assets/icons/exclamation.png" alt="" srcset="" />
-              <p>Cidade Obrigatório</p>
+            <div class="cityBox">
+              <label for="city">Qual sua cidade?</label>
+              <input
+                placeholder="Digite o nome de sua cidade"
+                type="text"
+                class="city"
+                id="city"
+              />
+              <div class="alertText close" id="alertCity">
+                <img src="./assets/icons/exclamation.png" alt="" srcset="" />
+                <p>Cidade Obrigatória</p>
+              </div>
             </div>
           </div>
           <div class="passwordBox">
-            <label for="password">Digite uma senha</label>
-            <input placeholder="**********" type="password" id="password" />
-            <div class="alertText close" id="alertPassword">
-              <img src="./assets/icons/exclamation.png" alt="" srcset="" />
-              <p>Senha Obrigatória</p>
+            <div class="firstPassword">
+              <label for="password">Digite uma senha</label>
+              <input placeholder="**********" type="password" id="password" />
+              <div class="alertText close" id="alertPassword">
+                <img src="./assets/icons/exclamation.png" alt="" srcset="" />
+                <p>Senha Obrigatória</p>
+              </div>
+              <div class="alertText close" id="alertPasswordMinimum">
+                <img src="./assets/icons/exclamation.png" alt="" srcset="" />
+                <p>Digite no mínimo 6 caracteres</p>
+              </div>
             </div>
-            <div class="alertText close" id="alertPasswordMinimum">
-              <img src="./assets/icons/exclamation.png" alt="" srcset="" />
-              <p>Digite no mínimo 6 caracteres</p>
-            </div>
-            <label for="verifyPassword">Confirme sua senha</label>
-            <input
-              placeholder="**********"
-              type="password"
-              id="verifyPassword"
-            />
-            <div class="alertText close" id="alertVerifyPassword">
-              <img src="./assets/icons/exclamation.png" alt="" srcset="" />
-              <p>As senhas são diferentes</p>
+            <div class="secondPassword">
+              <label for="verifyPassword">Confirme sua senha</label>
+              <input
+                placeholder="**********"
+                type="password"
+                id="verifyPassword"
+              />
+              <div class="alertText close" id="alertVerifyPassword">
+                <img src="./assets/icons/exclamation.png" alt="" srcset="" />
+                <p>As senhas são diferentes</p>
+              </div>
             </div>
           </div>
-          <button id="buttonSignup" type="">Cadastrar</button>
+          <div class="buttonsForm">
+            <button id="buttonSignin" type="'">Já tenho Conta</button>
+            <button id="buttonSignup" type="">Cadastrar</button>
+          </div>
         </form>
       </div>
     </div>
