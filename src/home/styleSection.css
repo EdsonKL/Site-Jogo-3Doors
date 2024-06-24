@@ -1,0 +1,213 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rosarivo:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rosarivo:ital@0;1&display=swap");
+
+
+:root{
+ --cor-primaria: #1D112A;
+ --cor-secundaria: #eeeef0;
+ --cor-tercearia: #32134e;
+ --cor-quartenaria:#D9D9D9;
+ --cor-quinta:#D9D9D9;
+
+
+
+ --fonte-primaria: "Rosarivo", cursive;
+ --font-secundaria: serif;
+ --fonte-tercearia: "Poppins", sans-serif;
+}
+
+
+body {
+ background-color: var(--cor-primaria);
+}
+
+.apresentacao-conteudo-1 {
+ margin: 13% 0%;
+}
+
+.apresentacao-titulo {
+ margin: 1% 0%;
+ font-family: var(--fonte-primaria);
+ font-weight: 400;
+ font-size: 3.5rem;
+ color: var(--cor-secundaria);
+}
+
+
+.apresentacao-paragrafo {
+ margin: 1% 0%;
+ font-family: var(--font-secundaria);
+ font-weight: 400;
+ font-size: 1.33rem;
+ color: var(--cor-secundaria);
+}
+
+
+.contener-imagem-dourada{
+ margin: 2% 0%;
+}
+
+
+.imagem-dourada {
+
+
+}
+
+.apresentacao-conteudo-2 {
+    margin: 5% 0%;
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ }
+
+
+.contener-grande{
+ width: 120vh;
+ height: 60vh;
+ background-color: var(--cor-tercearia);
+ border-radius: 40px;
+ display: flex;
+ justify-content: space-between;
+ align-self: center;
+
+ img{
+    width: 100%;
+ }
+}
+
+.contener-texto {
+    margin: 8%;
+    text-align: left;
+
+}
+
+.apresentacao-titulo-2 {
+    margin: 1%;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: var(--cor-secundaria);
+}
+
+.apresentacao-paragrafo-2{
+    margin: 1%;
+    font-family: var(--font-secundaria);
+    font-weight: 400;
+    font-size: 1.33rem;
+    color: var(--cor-quinta);
+}
+
+.apresentacao-conteudo-3 {
+    margin: 8% 0%;
+
+}
+.apresentacao-titulo-3 {
+    margin: 1% ;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 2.7rem;
+    color: var(--cor-quartenaria);
+}
+
+.apresentacao-paragrafo-3 {
+    margin: 1% ;
+    font-family: var(--font-secundaria);
+    font-weight: 400;
+    font-size: 1.33rem;
+    color: var(--cor-quinta);
+}
+
+.cards-horizotal {
+    width: 100%;
+    margin: 8% 0%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    gap:20px;
+}
+
+.card {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.card-1 {
+    width: 38vh;
+    height: 48vh;
+    background-color: var(--cor-tercearia);
+    border-radius: 30px;
+}
+
+.imagem-lenda {
+    width: 90%;
+    display: flex;
+    object-position: center;
+    align-self: stretch;
+}
+
+.nome-dev {
+    margin: 3%;
+    color: var(--cor-quartenaria);
+}
+
+.info-lenda {
+    margin: 2% 8%;
+    color: var(--cor-quinta);
+    font-size: 1.2rem;
+}
+
+@media (max-width: 1100px){
+    .apresentacao-conteudo-2{
+        width: 100%;
+    }
+    .contener-grande{
+        width: 100vh;
+        height: 50vh;
+
+        img{
+            width: 60%;
+        }
+    }
+    .cards-horizotal {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px 30px;
+
+        img{
+            width: 100%;
+        }
+    }
+    .card-1 {
+        width: 28vh;
+        height: 38vh;
+    }
+    .imagem-lenda {
+        width: 50%;
+    }
+}
+
+@media (max-width: 700px){
+    .contener-grande{
+        width: 40vh;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .cards-horizotal {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 60px 30px;
+
+        img{
+            width: 100%;
+        }
+    }
+
+}
+
