@@ -40,7 +40,7 @@ async function fazPost(body) {
   await fetch("https://api-3-doors-game.vercel.app/sendmail", {
     method: "POST",
     headers: {
-      "X-api-key": process.env.X_API_KEY,
+      "X-api-key": "T69ve4cPJD4rK23mEpx40LXlwhDf7Y6grwpIL03yMtX2XgiuaZp1C6HkQvgsJUu1",
       "Content-Type": "application/json",
     },
     body: JSON.stringify(body),

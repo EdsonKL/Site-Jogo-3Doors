@@ -81,6 +81,7 @@ function verifyFields(
   if(password.length < 6){
     alertPasswordMinimum.classList.add("open");
     alertPasswordMinimum.classList.remove("close");
+    return false
   }else{
     
     alertPasswordMinimum.classList.add("close");
@@ -126,6 +127,13 @@ async function Signup() {
       password: password,
       state: state,
     };
+    document.getElementById("nameUser").value = ''
+    document.getElementById("email").value = ''
+    document.getElementById("age").value = ''
+    document.getElementById("state").value = 'MA'
+    document.getElementById("city").value = ''
+    document.getElementById("password").value = ''
+    document.getElementById("verifyPassword").value = ''
     console.log(body)
     const res = await fetch("https://api-3-doors-game.vercel.app/signup", {
       method: "POST",
