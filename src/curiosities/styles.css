@@ -270,13 +270,13 @@ main {
   width: 50%;
   color: white;
   padding: 20px;
-  height: 223px;
+  height: 230px;
   box-sizing: border-box;
   text-align: center;
 }
 
 .text-content h2 {
-  margin: 0; 
+  margin-top: 10px; 
   font-size: 1rem;
   font-family: 'Roboto', sans-serif;
 }
@@ -284,34 +284,46 @@ main {
 .text-content p {
   margin: 15px 0 0; 
   max-width: fit-content;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-family: "Roboto", sans-serif;
   line-height: 2rem;
 }
 
 
-@media screen and (min-width: 510px) and (max-width: 860px) {
+@media screen and (min-width: 860px) and (max-width: 980px) {
   .text-content {
     h2 {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
     p {
-      line-height: 1rem;
-      font-size: 0.8rem;
+      line-height: 1.4rem;
+      font-size: 0.9rem;
     }
 
   }
 }
-@media screen and (min-width: 0px) and (max-width: 510px) {
+@media screen and (min-width: 590px) and (max-width: 860px) {
+  .text-content {
+    h2 {
+      font-size: 1.1rem;
+    }
+    p {
+      line-height: 1rem;
+      font-size: 0.9rem;
+    }
+
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 590px) {
   .text-content {
     width: 72%;
     height: 250px;
     h2 {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
     p {
       line-height: 1.2rem;
-      font-size: 0.7rem;
+      font-size: 0.8rem;
     }
 
   }
