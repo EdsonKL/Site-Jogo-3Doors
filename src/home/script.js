@@ -1,4 +1,5 @@
 const buttonSignup = document.getElementById("buttonSignup");
+const buttonSignin = document.getElementById("buttonSignin")
 
 const nameUser = document.getElementById("nameUser").value;
 const email = document.getElementById("email").value;
@@ -37,6 +38,7 @@ function verifyFields(
     alertName.classList.remove("open");
   }
   if (email == "") {
+    alertEmail.innerText = "Email Obrigatório";
     alertEmail.classList.add("open");
     alertEmail.classList.remove("close");
     return false;
@@ -100,7 +102,7 @@ async function Signup() {
 
   const nameUser = document.getElementById("nameUser").value;
   const email = document.getElementById("email").value;
-  const age =  parseInt(document.getElementById("age").value);
+  const age = parseInt(document.getElementById("age").value);
   const state = document.getElementById("state").value;
   const city = document.getElementById("city").value;
   const password = document.getElementById("password").value;
@@ -124,23 +126,43 @@ async function Signup() {
       password: password,
       state: state,
     };
-    document.getElementById("nameUser").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("age").value = "";
-    document.getElementById("state").value = "MA";
-    document.getElementById("city").value = "";
-    document.getElementById("password").value = "";
-    document.getElementById("verifyPassword").value = "";
     console.log(body);
-    const res = await fetch("https://api-3-doors-game.vercel.app/signup", {
-      method: "POST",
-      headers: {
-        "X-api-key":
-          "T69ve4cPJD4rK23mEpx40LXlwhDf7Y6grwpIL03yMtX2XgiuaZp1C6HkQvgsJUu1",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(body),
-    }).then();
+    try {
+      const res = await fetch("https://api-3-doors-game.vercel.app/signup", {
+        method: "POST",
+        headers: {
+          "X-api-key":
+            "T69ve4cPJD4rK23mEpx40LXlwhDf7Y6grwpIL03yMtX2XgiuaZp1C6HkQvgsJUu1",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body),
+      });
+      const data = await res.json();
+      console.log(data);
+      if (data.message === "Usuário criado.") {
+        document.getElementById("nameUser").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("age").value = "";
+        document.getElementById("state").value = "MA";
+        document.getElementById("city").value = "";
+        document.getElementById("password").value = "";
+        document.getElementById("verifyPassword").value = "";
+        buttonSignup.innerText = "Conta Criada!"
+        buttonSignin.innerText = "Fazer Login"
+
+      }
+
+      let erroEmail = data?.errors[0].email || "";
+      if (erroEmail == "Email ja esta em uso") {
+        alertEmail.innerText = "Este E-email já está em uso";
+        alertEmail.classList.add("open");
+        alertEmail.classList.remove("close");
+      } else if (erroEmail == "Email invalido") {
+        alertEmail.innerText = "Este E-email é inválido";
+        alertEmail.classList.add("open");
+        alertEmail.classList.remove("close");
+      }
+    } catch (error) {}
     return;
   }
   console.log("chegou aqui pq ta faltando coisa");
@@ -155,8 +177,7 @@ function menuShow() {
   console.log("chegou aqui");
   if (menuMobile.classList.contains("open")) {
     menuMobile.classList.remove("open");
-    document.querySelector(".icon").src =
-      "./assets/images/menu_white_36dp.svg";
+    document.querySelector(".icon").src = "./assets/images/menu_white_36dp.svg";
   } else {
     menuMobile.classList.add("open");
     document.querySelector(".icon").src =
