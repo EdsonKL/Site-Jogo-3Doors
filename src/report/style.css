@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rosarivo:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rosarivo:ital@0;1&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -56,7 +56,7 @@ header {
 
 .login__button__cadastrar {
   border: none;
-  background-color: #7F32C0;
+  background-color: #7f32c0;
   padding: 10px 20px;
   border-radius: 5px;
   margin-right: 10px;
@@ -66,13 +66,13 @@ header {
   color: #ffffff;
   font-weight: 300;
   font-size: 1.3rem;
-  font-family: "Poppins", sans-serif;;
+  font-family: "Poppins", sans-serif;
 }
 
 .login__button__entrar {
   border: none;
   background-color: #211232;
-  border: 2px solid #7F32C0;
+  border: 2px solid #7f32c0;
   padding: 10px 20px;
   border-radius: 4px;
   margin-right: 0;
@@ -95,11 +95,11 @@ header {
 }
 
 .mobile-menu {
-  display: none; 
+  display: none;
 }
 
 .rodape {
-  background-color: #32134E;
+  background-color: #32134e;
   color: white;
   padding: 60px;
   text-align: center;
@@ -143,102 +143,98 @@ header {
   width: 100%;
 }
 
-
 @media screen and (max-width: 1260px) {
   .nav-bar {
-      padding: 4rem 6rem;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
+    padding: 4rem 6rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
   .logo__jogo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .nav-item {
-      display: none;
+    display: none;
   }
   .login-button {
-      display: none;
+    display: none;
   }
   .login__button__cadastrar {
-      display: none;
+    display: none;
   }
   .login__button__entrar {
-      display: none;
+    display: none;
   }
   .mobile-menu-icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 60px;
-      height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
   }
   .mobile-menu-icon button {
-      background-color:#211232;
-      border: none;
-      cursor: pointer;
-      padding: 30px;
+    background-color: #211232;
+    border: none;
+    cursor: pointer;
+    padding: 30px;
   }
   .mobile-menu ul {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
   }
   .mobile-menu .nav-item {
-      display: block;
-      padding-top: 1.4rem;
-      font-size: 26px;
+    display: block;
+    padding-top: 1.4rem;
+    font-size: 26px;
   }
   .mobile-menu .login-button {
-      display: block;
-      padding: 1rem 2rem;
+    display: block;
+    padding: 1rem 2rem;
   }
   .mobile-menu .login-button button {
-      width: 100%;
+    width: 100%;
   }
   .open {
-      display: block;
+    display: block;
   }
   .rodape {
-      padding: 10px;
+    padding: 10px;
   }
 
   .rodape__frase {
-      font-family: "Poppins", sans-serif;
-      font-size: 15px;
-      margin-top: 20px;
-      font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: 300;
   }
 
   .rodape__links {
-      text-align: left;
-      margin-bottom: 10px;
+    text-align: left;
+    margin-bottom: 10px;
   }
 
   .rodape__links a {
-      display: block;
-      margin: 8px 0;
-      font-size: 15px;
-      font-family: "Roboto", sans-serif;
-      font-weight: 400;
+    display: block;
+    margin: 8px 0;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
   }
 
   .rodape__line {
-      margin: 10px 0;
+    margin: 10px 0;
   }
 
   .rodape__frase-container {
-      justify-content: center; 
+    justify-content: center;
   }
 }
 
 /*  */
-
-
-
 
 #main {
   background-color: #1d112a;
@@ -250,7 +246,7 @@ header {
   gap: 64px;
 }
 @media screen and (min-width: 0px) and (max-width: 1038px) {
-  #main{
+  #main {
     flex-direction: column;
     padding: 50px 20px;
   }
@@ -272,51 +268,50 @@ header {
   }
 }
 @media screen and (min-width: 1038px) and (max-width: 1090px) {
-  .textMain{
-    h1{
+  .textMain {
+    h1 {
       font-size: 48px;
     }
-    p{
+    p {
       font-size: 17px;
     }
   }
 }
 @media screen and (min-width: 840px) and (max-width: 1038px) {
-  .textMain{
+  .textMain {
     width: 70%;
-    h1{
+    h1 {
       font-size: 68px;
     }
-    p{
+    p {
       font-size: 24px;
     }
   }
 }
 @media screen and (min-width: 500px) and (max-width: 840px) {
-  .textMain{
-    width: 85%;
-    h1{
-      font-size: 7vw;
+  .textMain {
+    width: 100%;
+    h1 {
+      font-size: 2.4rem;
       margin-bottom: 15px;
     }
-    p{
-      font-size: 4vw;
+    p {
+      font-size: 1.2rem;
     }
   }
 }
-@media screen and (min-width: 0px) and (max-width: 600px) {
-  .textMain{
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  .textMain {
     width: 100%;
-    h1{
+    h1 {
       font-size: 6vw;
       margin-bottom: 15px;
     }
-    p{
+    p {
       font-size: 4vw;
     }
   }
 }
-
 
 .alertText {
   size: 12px;
@@ -331,11 +326,11 @@ header {
   gap: 3px;
 }
 
-.open{
+.open {
   display: flex;
 }
-.close{
-  display:none
+.close {
+  display: none;
 }
 
 .formBox {
@@ -364,22 +359,22 @@ header {
     }
   }
   @media screen and (min-width: 840px) and (max-width: 1038px) {
-    .nameBox{
-      label{
+    .nameBox {
+      label {
         font-size: 20px;
       }
-      input{
+      input {
         width: 65vw;
         height: 52px;
       }
     }
   }
   @media screen and (min-width: 600px) and (max-width: 840px) {
-    .nameBox{
-      label{
+    .nameBox {
+      label {
         font-size: 25px;
       }
-      input{
+      input {
         font-size: 20px;
         width: 75vw;
         height: 52px;
@@ -387,25 +382,26 @@ header {
     }
   }
   @media screen and (min-width: 400px) and (max-width: 600px) {
-    .nameBox{
-      label{
-        font-size: 20px;
+    .nameBox {
+      label {
+        font-size: 18px;
       }
-      input{
-        font-size: 25px;
-        width: 90vw;
+      input {
+        font-size: 16px;
+        width: 85vw;
         height: 52px;
       }
     }
   }
   @media screen and (min-width: 300px) and (max-width: 400px) {
-    .nameBox{
-      label{
-        font-size: 18px;
-      }
-      input{
+    .nameBox {
+      label {
         font-size: 16px;
-        width: 90vw;
+
+      }
+      input {
+        font-size: 14px;
+        width: 85vw;
         height: 45px;
       }
     }
@@ -435,23 +431,23 @@ header {
       border: none;
     }
   }
-  @media screen and (min-width: 400px) and (max-width: 1038px) {
-    .emailBox{
-      label{
+  @media screen and (min-width: 840px) and (max-width: 1038px) {
+    .emailBox {
+      label {
         font-size: 20px;
       }
-      input{
+      input {
         width: 65vw;
         height: 52px;
       }
     }
   }
-  @media screen and (min-width: 500px) and (max-width: 840px) {
-    .emailBox{
-      label{
+  @media screen and (min-width: 600px) and (max-width: 840px) {
+    .emailBox {
+      label {
         font-size: 25px;
       }
-      input{
+      input {
         font-size: 20px;
         width: 75vw;
         height: 52px;
@@ -459,25 +455,25 @@ header {
     }
   }
   @media screen and (min-width: 400px) and (max-width: 600px) {
-    .emailBox{
-      label{
-        font-size: 20px;
+    .emailBox {
+      label {
+        font-size: 18px;
       }
-      input{
-        font-size: 25px;
-        width: 90vw;
+      input {
+        font-size: 16px;
+        width: 85vw;
         height: 52px;
       }
     }
   }
   @media screen and (min-width: 300px) and (max-width: 400px) {
-    .emailBox{
-      label{
-        font-size: 18px;
-      }
-      input{
+    .emailBox {
+      label {
         font-size: 16px;
-        width: 90vw;
+      }
+      input {
+        font-size: 16px;
+        width: 85vw;
         height: 45px;
       }
     }
@@ -494,44 +490,60 @@ header {
       font-weight: 500;
       font-size: 14px;
     }
-    .radioBox{
+    .radioBox {
       gap: 5px;
     }
-}
-@media screen and (min-width: 400px) and (max-width: 1038px) {
-  .whereBox{
-    label{
-      font-size: 20px;
-    }
-    .radioBox label{
-      font-size: 16px;
+  }
+  @media screen and (min-width: 840px) and (max-width: 1038px) {
+    .whereBox {
+      label {
+        font-size: 20px;
+      }
+      .radioBox label {
+        font-size: 16px;
+      }
     }
   }
-}
-@media screen and (min-width: 500px) and (max-width: 840px) {
-  .whereBox{
-    label{
-      font-size: 25px;
-    }
-    .radioBox label{
-      font-size: 18px;
-    }
-  }
-}
-@media screen and (min-width: 400px) and (max-width: 600px) {
-  .whereBox{
-    label{
-      font-size: 20px;
+  @media screen and (min-width: 600px) and (max-width: 840px) {
+    .whereBox {
+      label {
+        font-size: 25px;
+      }
+      .radioBox label {
+        font-size: 18px;
+      }
     }
   }
-}
-@media screen and (min-width: 300px) and (max-width: 400px) {
-  .whereBox{
-    label{
-      font-size: 18px;
+  @media screen and (min-width: 400px) and (max-width: 600px) {
+    .whereBox {
+      width: 85vw;
+      display: flex;
+      align-items: start;
+      label {
+        font-size: 18px;
+      }
+      .radioBox{
+        label{
+          font-size: 16px;
+        }
+      }
     }
   }
-}
+  @media screen and (min-width: 0) and (max-width: 400px) {
+    .whereBox {
+      width: 90vw;
+      display: flex;
+      align-items: start;
+      label {
+        font-size: 16px;
+      }
+      .radioBox{
+        label{
+          font-size: 14px;
+        }
+      }
+    }
+  }
   .textAreaBox {
     padding-top: 20px;
     display: flex;
@@ -560,47 +572,48 @@ header {
     }
   }
   @media screen and (min-width: 840px) and (max-width: 1038px) {
-    .textAreaBox{
-      label{
+    .textAreaBox {
+      label {
         font-size: 20px;
       }
-      textarea{
+      textarea {
         width: 65vw;
       }
     }
   }
-  @media screen and (min-width: 500px) and (max-width: 840px) {
-    .textAreaBox{
-      label{
+  @media screen and (min-width: 600px) and (max-width: 840px) {
+    .textAreaBox {
+      label {
         font-size: 25px;
       }
-      textarea{
+      textarea {
         width: 75vw;
       }
     }
   }
   @media screen and (min-width: 400px) and (max-width: 600px) {
-    .textAreaBox{
-      label{
-        font-size: 20px;
-      }
-      textarea{
+    .textAreaBox {
+      label {
         font-size: 18px;
-        width: 90vw;
+      }
+      textarea {
+        font-size: 16px;
+        width: 85vw;
       }
     }
   }
   @media screen and (min-width: 300px) and (max-width: 400px) {
-    .textAreaBox{
-      label{
-        font-size: 18px;
+    .textAreaBox {
+      label {
+        font-size: 16px;
       }
-      textarea{
-        width: 90vw;
+      textarea {
+        font-size: 14px;
+        width: 85vw;
       }
     }
   }
-  #buttonReport{
+  #buttonReport {
     display: flex;
     margin-top: 10px;
     width: 130px;
@@ -610,29 +623,35 @@ header {
     padding: 12px 16px;
     justify-content: center;
     align-items: center;
-    background-color: #7F32C0;
+    background-color: #7f32c0;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #EEEEEE;
+    color: #eeeeee;
     cursor: pointer;
   }
   @media screen and (min-width: 600px) and (max-width: 1038px) {
-    #buttonReport{
+    #buttonReport {
       width: 190px;
       height: 56px;
       font-size: 20px;
     }
   }
   @media screen and (min-width: 0px) and (max-width: 600px) {
-    #buttonReport{
+    #buttonReport {
       width: 100%;
       height: 58px;
       font-size: 20px;
     }
   }
-  #buttonReport:hover{
+  #buttonReport:hover {
     background-color: #632694;
-
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  .formBox form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
