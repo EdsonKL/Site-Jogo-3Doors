@@ -100,7 +100,7 @@ async function Signup() {
 
   const nameUser = document.getElementById("nameUser").value;
   const email = document.getElementById("email").value;
-  const age = document.getElementById("age").value;
+  const age =  parseInt(document.getElementById("age").value);
   const state = document.getElementById("state").value;
   const city = document.getElementById("city").value;
   const password = document.getElementById("password").value;
