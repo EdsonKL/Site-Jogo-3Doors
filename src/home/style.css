@@ -274,7 +274,7 @@ header {
 @media screen  and (min-width: 0px) and (max-width: 700px) {
   #mainSignup {
     flex-direction: column;
-    padding: 100px 10px;
+    padding: 20px 5px;
     align-items: center;
 
   }
@@ -283,9 +283,10 @@ header {
     align-items: center;
 
     h1{
-      font-size: 6.7vw;
+      font-size: 7.5vw;
     }
     p{
+      text-align: center;
       font-size: 18px;
       width: 85%;
       max-height: 10px;
@@ -356,7 +357,7 @@ header {
       font-size: 18px;
     }
     input{
-      width: 85vw;
+      width: 75vw;
     }
   }
 }
@@ -419,7 +420,7 @@ header {
         font-size: 18px;
       }
       input{
-        width: 85vw;
+        width: 75vw;
       }
     }
   }
@@ -462,7 +463,7 @@ header {
         font-size: 18px;
       }
       input{
-        width: 85vw;
+        width: 75vw;
       }
     }
   }
@@ -522,21 +523,28 @@ header {
       }
     }
   }
-  @media screen  and (min-width: 0px) and (max-width: 700px) {
+  @media screen  and (min-width: 500px) and (max-width: 700px) {
     .addressBox{
       label{
         font-size: 18px;
       }
       select{
-        width: 31vw;
+        width: 30vw;
       }
       input{
-        width: 52vw;
+        width: 42vw;
       }
     }
   }
   @media screen and (min-width: 0px) and (max-width: 500px) {
     .addressBox{
+      flex-direction: column;
+      select{
+        width: 82vw;
+      }
+      input{
+        width: 76vw;
+      }
       label{
       font-size: 15px;   
     }
@@ -593,7 +601,7 @@ header {
         font-size: 18px;
       }
       input{
-        width: 39vw;
+        width: 34vw;
       }
     }
   }
@@ -604,7 +612,7 @@ header {
         font-size: 18px;
       }
       input{
-        width: 85vw;
+        width: 76vw;
       }
     }
   }
@@ -623,6 +631,7 @@ header {
   @media screen and (min-width: 0px) and (max-width: 500px) {
     .buttonsForm{
       display: flex;
+      width: 100%;
       flex-direction: column-reverse;
     }
   }
@@ -681,5 +690,11 @@ header {
   }
   #buttonSignin:hover {
     background-color: #452e58;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 1225px) {
+  .formBox form{
+    width: 100%;
+    align-items: center;
   }
 }
