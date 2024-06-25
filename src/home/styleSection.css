@@ -25,14 +25,14 @@ body {
 }
 
 .apresentacao-conteudo-1 {
- margin: 13% 3%;
+ margin-top: 8%;
 }
 
 .apresentacao-titulo {
  margin: 1% 0%;
  font-family: var(--fonte-primaria);
  font-weight: 400;
- font-size: 3.5rem;
+ font-size: 4rem;
  color: var(--cor-secundaria);
 }
 
@@ -41,7 +41,7 @@ body {
  margin: 1% 0%;
  font-family: var(--font-secundaria);
  font-weight: 400;
- font-size: 1.33rem;
+ font-size: 1.5rem;
  color: var(--cor-secundaria);
 }
 
@@ -60,8 +60,8 @@ body {
 
 
 .contener-grande{
- width: 120vh;
- height: 60vh;
+ width: 975px;
+ height: 490px;
  background-color: var(--cor-tercearia);
  border-radius: 40px;
  display: flex;
@@ -95,7 +95,7 @@ body {
     margin: 1%;
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     color: var(--cor-secundaria);
 }
 
@@ -103,14 +103,14 @@ body {
     margin: 1%;
     font-family: var(--font-secundaria);
     font-weight: 400;
-    font-size: 1.33rem;
+    font-size: 1.5rem;
     color: var(--cor-quinta);
 }
 
 .div-iniciar{
     margin: 4%;
-    width: 18vh;
-    height: 7vh;
+    width: 160px;
+    height: 56px;
     background-color: var(--cor-sete);
     border-radius: 15px;
     display: flex;
@@ -125,10 +125,11 @@ body {
 }
 
 .apresentacao-conteudo-3 {
-    margin: 8% 0%;
+    margin-top: 5%;
     display: flex;
     flex-direction:column ;
     align-self: center;
+    justify-items: center;
 
 }
 .apresentacao-titulo-3 {
@@ -143,56 +144,51 @@ body {
     margin: 1% ;
     font-family: var(--font-secundaria);
     font-weight: 400;
-    font-size: 1.33rem;
+    font-size: 1.5rem;
     color: var(--cor-quinta);
 
 }
 
 .cards-horizotal {
-    width: 80%;
-    margin: 8% 0%;
+    margin-top: 4%;
     display: flex;
     justify-content: space-between;
     align-self: center;
-    gap:20px;
+    gap:30px;
 }
 
 .card {
-    width: 100%;
+    width: 320px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .card-1 {
-    width: 38vh;
-    height: 48vh;
+    width: 320px;
+    height: 400px;
     background-color: var(--cor-tercearia);
     border-radius: 30px;
     img {
-        width: 320px;
+        width: 290px;
         height: 350px;
     }
 }
 
 .imagem-lenda {
-    width: 90%;
+    width: 100%;
     display: flex;
     object-position: center;
-    align-self: stretch;
-}
-
-.div-text-lenda {
-    margin: 0% 10%;
 }
 
 .nome-lenda {
-    margin: 3%;
+    margin-top: 5%;
     color: var(--cor-quartenaria);
 }
 
 .info-lenda {
-    margin: 2% 8%;
+    margin: 3%;
     color: var(--cor-quinta);
     font-size: 1.2rem;
 }
@@ -202,11 +198,8 @@ body {
         width: 100%;
     }
     .contener-grande{
-        width: 80vh;
-        height: 45vh;
-
-
-     
+        width: 650px;
+        height: 365px;
     }
     .contener-imagem {
         width: 50%;
@@ -236,9 +229,13 @@ body {
             width: 100%;
         }
     }
+    .card{
+        width: 250px;
+        height: 510px;
+    }
     .card-1 {
-        width: 28vh;
-        height: 38vh;
+        width: 240px;
+        height: 310px;
 
         img {
             width: 220px;
@@ -255,7 +252,7 @@ body {
     }
     
     .info-lenda {
-        margin: 2% 20%;
+        margin: 2% 8%;
         font-size: 1.2rem;
     }
 }
@@ -274,7 +271,7 @@ body {
         margin:20% 5%;
     }
     .apresentacao-conteudo-2{
-        margin:15% 2% ;
+        margin:15% 0% ;
     }
     .apresentacao-titulo-3{
         margin: 0% 5%;
@@ -286,8 +283,8 @@ body {
     }
 
     .contener-grande{
-        width: 40vh;
-        height: 65vh;
+        width: 325px;
+        height: 550px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -309,7 +306,20 @@ body {
         gap: 60px 30px;
 
         img{
-            width: 100%;
+            width: 200px;
+        }
+    }
+    .card{
+        width: 220px;
+        height: 410px;
+    }
+    .card-1 {
+        width: 220px;
+        height: 310px;
+
+        img {
+            width: 220px;
+            height: 250px;
         }
     }
     .nome-lenda {
@@ -319,7 +329,7 @@ body {
     }
     
     .info-lenda {
-        margin: 2% 15%;
+        margin: 2% 5%;
         font-size: 1rem;
     }
 
