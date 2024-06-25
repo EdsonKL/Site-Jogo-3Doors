@@ -277,6 +277,7 @@ header {
     letter-spacing: 3.24px;
     font-size: 3.5rem;
     font-family: var(--fonte-primaria);
+    text-align: center;
 }
 
 .apresentacao-conteudo-paragrafo {
@@ -288,8 +289,9 @@ header {
 }
 
 .cards-horizotal {
-    gap: 20px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px 15px;
   }
   
 
@@ -324,8 +326,8 @@ header {
 .card-21 {
     justify-content: center;
     align-items: center;
-    width: 30vh; 
-    height: 30vh;  
+    width: 245px; 
+    height: 245px;  
     background-color: var(--coe-sexta); 
     border-radius: 40px; 
     margin-bottom: 15px; 
@@ -367,13 +369,13 @@ header {
     object-position: center;
 }
 
-@media (max-width: 2500px) {
+/* @media (max-width: 2500px) {
     .cards-horizotal {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 100px 15px;
     }
-}
+} */
 
 @media (max-width: 1100px) {
 
@@ -398,8 +400,12 @@ header {
     .card-19,
     .card-20,
     .card-21 {
-            width: 23vh;
-            height: 23vh;
+            width: 186px;
+            height: 186px;
+            }
+            .cards-horizotal {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 80px 15px;
             }
 }
 @media (max-width: 850px) {
@@ -409,7 +415,7 @@ header {
     }
 
     .apresentacao-conteudo-paragrafo{
-        padding: 0% 5% 20% 5%;
+        padding: 0% 8% 8% 8%;
         font-size: 1.4rem;
     }
 
@@ -434,25 +440,24 @@ header {
     .card-19,
     .card-20,
     .card-21 {
-            width: 21vh;
-            height: 21vh;
+            width: 160px;
+            height:160px;
         }
     .cards-horizotal {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 80px 15px;
     }
     
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .apresentacao-conteudo-titulo {
         padding: 5%;
         font-size: 2rem;
     }
 
     .apresentacao-conteudo-paragrafo{
-        padding: 0% 5% 20% 5%;
+        padding-bottom: 8%;
         font-size: 1rem;
     }
     .apresentacao-conteudo-1{
@@ -466,7 +471,7 @@ header {
     .cards-horizotal {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 80px 15px;
+        gap: 70px 15px;
     }
     .card-1,
     .card-2,
@@ -489,8 +494,8 @@ header {
     .card-19,
     .card-20,
     .card-21{
-        width: 20vh;
-        height: 20vh;
+        width: 150px;
+        height: 150px;
         }
     .nome-dev {
         margin-top: 0px;
