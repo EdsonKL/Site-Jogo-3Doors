@@ -1,98 +1,169 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./src/home/style.css" />
+    <link rel="stylesheet" href="./src/home/styleHeader.css">
+    <link rel="stylesheet" href="./src/home/styleSection.css">
     <title>3Doors: O Casarão</title>
-</head>
+  </head>
   <body>
     <header>
-      <nav class = "nav-bar">
+      <nav class="nav-bar">
         <div class="logo">
-          <img class="logo__jogo" src="/frontend-secti/frontend-secti/assets/images/logo.png" alt="Logo do Jogo">
-      </div>
+          <img
+            class="logo__jogo"
 
+            src="./assets/images/logo.png"
 
-          <div class="nav-list">
-            <ul>
-              <li class="nav-item"> <a href="/frontend-secti/frontend-secti/src/home/index.html" class="nav-link">Início</a></li>
-              <li class="nav-item"> <a href="/frontend-secti/frontend-secti/src/curiosities/index.html" class="nav-link">História</a></li>
-              <li class="nav-item"> <a href="/frontend-secti/frontend-secti/src/devs/index.html" class="nav-link">Desenvolvedores</a></li>
-              <li class="nav-item"> <a href="/frontend-secti/frontend-secti/src/report/index.html" class="nav-link">Reportar</a></li>
+            alt="Logo do Jogo"
+          />
+        </div>
+
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item">
+
+              <a href="./index.html" class="nav-link">Início</a>
+            </li>
+            <li class="nav-item">
+              <a href="./src/curiosities/index.html" class="nav-link"
+                >História</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="./src/devs/index.html" class="nav-link"
+                >Desenvolvedores</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="./src/report/index.html" class="nav-link">Reportar</a>
+
+            </li>
           </ul>
-          </div>
+        </div>
 
-          <div class="login__button">
-              <button class="login__button__cadastrar"><a href="#">Cadastre-se</a></button>
-              <button class="login__button__entrar"><a href="#">Login</a></button>
-          </div>
+        <div class="login__button">
+          <button class="login__button__cadastrar">
+            <a href="#">Cadastre-se</a>
+          </button>
+          <button class="login__button__entrar"><a href="#">Login</a></button>
+        </div>
 
-          <div class="mobile-menu-icon">
-              <button onclick="menuShow()"><img class="icon" src="/frontend-secti/frontend-secti/assets/images/menu_white_36dp.svg" alt=""></button>
-          </div>
+        <div class="mobile-menu-icon">
+          <button id="menuShow">
+            <img
+              class="icon"
+              src="./assets/images/menu_white_36dp.svg"
+              alt=""
+            />
+          </button>
+        </div>
       </nav>
       <div class="mobile-menu">
-          <ul>
-              <li class="nav-item"> <a href="/frontend-secti/src/home/index.html" class="nav-link">Início</a></li>
-              <li class="nav-item"> <a href="/frontend-secti/src/curiosities/index.html" class="nav-link">História</a></li>
-              <li class="nav-item"> <a href="/frontend-secti/src/devs/index.html" class="nav-link">Desenvolvedores</a></li>
-              <li class="nav-item"> <a href="/frontend-secti/src/report/index.html" class="nav-link">Reportar</a></li>
-          </ul>
+        <ul>
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="./src/curiosities/index.html" class="nav-link">História</a>
+          </li>
+          <li class="nav-item">
+            <a href="./src/devs/index.html" class="nav-link">Desenvolvedores</a>
+          </li>
+          <li class="nav-item">
+            <a href="./src/report/index.html" class="nav-link">Reportar</a>
+          </li>
+        </ul>
 
-          <div class="login__button">
-              <button class="login__button__cadastrar"><a href="#">Cadastre-se</a></button>
-              <button class="login__button__entrar"><a href="#">Login</a></button>
-          </div>
-
+        <div class="login__button">
+          <button class="login__button__cadastrar">
+            <a href="#">Cadastre-se</a>
+          </button>
+          <button class="login__button__entrar"><a href="#">Login</a></button>
+        </div>
       </div>
-  </header>
-    <h1>Landing page</h1>
-    <section>
-        <div>
-        <h1 class="Apresentacao-titulo">Desvende os Segredos do Nosso Povo</h1>
-        <p class="apresentacao-paragrafo">Entre no mundo das lendas maranhenses e prove suas habilidades em 3Doors: O Casarão. Explore, descubra e escape!</p>
-        </div>
-        <div>
-            <img src="" alt="Imagem de jogar agora" class="imagem-dourada">
-        </div>
+    </header>
+    <section class="apresentacao-conteudo-1">
+      <div>
+        <h1 class="apresentacao-titulo">Desvende os Segredos do Nosso Povo</h1>
+
+        <p class="apresentacao-paragrafo">
+          Entre no mundo das lendas maranhenses e prove suas habilidades em
+          3Doors: O Casarão. Explore, descubra e escape!
+        </p>
+      </div>
+
+      <div class="contener-imagem-dourada">
+        <a href="#" aria-label="link do jogo">
+        <img src="./assets/images/Button L.png" alt="Imagem de jogar agora" class="imagem-dourada" />
+        </a>
+      </div>
     </section>
-    <section>
-        <div>
-            <img src="" alt="imagem grande" class="imagem-grande">
-            <div>
-                <h1>Uma Jornada pelas Lendas</h1>
-                <p>3Doors: O Casarão é um jogo de aventura e mistério onde você deve desvendar enigmas baseados em histórias de povos tradicionais das terras do norte-nordeste. Prepare-se para explorar, interagir e desafiar seus conhecimentos culturais.</p>
-                <button class="cta-button" aria-label="Iniciar jogo"></button>
-            </div>
+    <section class="apresentacao-conteudo-2">
+      <div class="contener-grande">
+        <div class="contener-imagem">
+        <img src="./assets/images/image 1.png" alt="imagem grande" class="imagem-grande" />
+        </div>  
+        <div class="contener-texto">
+          <h2 class="apresentacao-titulo-2">Uma Jornada pelas Lendas</h2>
+          <p class="apresentacao-paragrafo-2">
+
+            3Doors: O Casarão é um jogo de aventura e mistério onde você deve
+            desvendar enigmas baseados em histórias de povos tradicionais das
+            terras do norte-nordeste. Prepare-se para explorar, interagir e
+            desafiar seus conhecimentos culturais.
+          </p>
+          <div class="div-iniciar">
+            <a href="#" aria-label="Social media link 1" class="iniciar-jogo">Jogue Agora</a>
+          </div>
         </div>
+      </div>
     </section>
-    <section>
-        <h1>Explore o que tem por trás de cada mito</h1>
-        <p>Descubra as histórias fascinantes por trás das lendas maranhenses enquanto navega por cenários envolventes e cheios de mistério.</p>
-        <div class="cards-horizotal">
-            <article class="card" > 
-                <div class="card-1">
-                    <img src="" alt="" class="Imagem da lenda">
-                </div>
-                <h2 class="Anna Jansem">Lorem Ipsum</h2>
-                <p class="info-lenda">Deus Salve a Rainha: Descubra os segredos de Anna Jansen e sua carruagem fantasmagórica.</p>
-            </article>
-            <article class="card" > 
-                <div class="card-1">
-                    <img src="" alt="" class="Imagem da lenda">
-                </div>
-                <h2 class="nome-dev">O palácio</h2>
-                <p class="info-lenda">A Tragédia do Palácio: Explore o mistério de uma mulher que chorava incessantemente pelo seu amado perdido.</p>
-            </article>
-            <article class="card" > 
-                <div class="card-1">
-                    <img src="" alt="" class="Imagem da lenda">
-                </div>
-                <h2 class="nome-dev">Canais Malignos</h2>
-                <p class="info-lenda">Os Segredos Submersos: Desvende os mistérios dos antigos canais ludoviscenses</p>
-            </article>
-        </div>
+    <section class="apresentacao-conteudo-3">
+      <h1 class="apresentacao-titulo-3">Explore o que tem por trás de cada mito</h1>
+      <p class="apresentacao-paragrafo-3">
+
+        Descubra as histórias fascinantes por trás das lendas maranhenses
+        enquanto navega por cenários envolventes e cheios de mistério.
+      </p>
+      <div class="cards-horizotal">
+        <article class="card">
+          <div class="card-1">
+            <img src="./assets/images/image 1 (4).png" alt="Imagem da lenda" class="Imagem-lenda" />
+          </div>
+          <div class="div-text-lenda">
+            <h2 class="nome-lenda">ENIGMAS DESAFIADORES</h2>
+            <p class="info-lenda">
+              Desafie suas habilidades de resolução de problemas com enigmas complexos e intrigantes.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-1">
+            <img src="./assets/images/porta.png" alt="Imagem da lenda" class="Imagem-lenda" />
+          </div>
+          <div class="div-text-lenda">
+            <h2 class="nome-lenda">CENÁRIOS IMERSIVOS</h2>
+            <p class="info-lenda">
+              Explore cenários envolventes e cheios de mistério que trazem à vida as lendas do Maranhão.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-1">
+            <img src="./assets/images/image 1 (5).png" alt="Imagem da lenda" class="Imagem-lenda" />
+          </div>
+          <div class="div-text-lenda">
+            <h2 class="nome-lenda">HISTÓRIAS CULTURAIS</h2>
+            <p class="info-lenda">
+              Mergulhe nas fascinantes histórias e lendas da cultura Maranhense.
+            </p>
+          </div>
+        </article>
+      </div>
     </section>
     <div id="mainSignup">
       <div class="textMain">
@@ -103,9 +174,10 @@
         </p>
       </div>
       <div class="formBox">
+        <h2>Cadastre-se e jogue agora mesmo</h2>
         <form action="">
           <div class="nameBox">
-            <label for="name">Diga seu Nome</label>
+            <label for="name">Nome</label>
             <input
               placeholder="Anna Jansen"
               type="text"
@@ -113,7 +185,7 @@
               id="nameUser"
             />
             <div class="alertText close" id="alertName">
-              <img src="../../assets/icons/exclamation.png" alt="" srcset="" />
+              <img src="./assets/icons/exclamation.png" alt="" srcset="" />
               <p>Nome Obrigatório</p>
             </div>
           </div>
@@ -126,7 +198,7 @@
               id="email"
             />
             <div class="alertText close" id="alertEmail">
-              <img src="../../assets/icons/exclamation.png" alt="" srcset="" />
+              <img src="./assets/icons/exclamation.png" alt="" srcset="" />
               <p>Email Obrigatório</p>
             </div>
           </div>
@@ -139,95 +211,108 @@
               id="age"
             />
             <div class="alertText close" id="alertAge">
-              <img src="../../assets/icons/exclamation.png" alt="" srcset="" />
+              <img src="./assets/icons/exclamation.png" alt="" srcset="" />
+
               <p>Idade Obrigatória</p>
             </div>
           </div>
           <div class="addressBox">
-            <label for="state">Diga seu estado</label>
-            <select id="state" name="state">
-              <option selected value="MA">MA</option>
-              <option value="PI">PI</option>
-              <option value="AL">AL</option>
-              <option value="AC">AC</option>
-              <option value="AP">AP</option>
-              <option value="AM">AM</option>
-              <option value="BA">BA</option>
-              <option value="CE">CE</option>
-              <option value="DF">DF</option>
-              <option value="ES">ES</option>
-              <option value="GO">GO</option>
-              <option value="MT">MT</option>
-              <option value="MS">MS</option>
-              <option value="MG">MG</option>
-              <option value="PA">PA</option>
-              <option value="PB">PB</option>
-              <option value="PR">PR</option>
-              <option value="PE">PE</option>
-              <option value="RJ">RJ</option>
-              <option value="RN">RN</option>
-              <option value="RS">RS</option>
-              <option value="RO">RO</option>
-              <option value="RR">RR</option>
-              <option value="SC">SC</option>
-              <option value="SP">SP</option>
-              <option value="SE">SE</option>
-              <option value="TO">TO</option>
-            </select>
-            <div class="alertText close" id="alertState">
-              <img src="../../assets/icons/exclamation.png" alt="" srcset="" />
-              <p>Estado Obrigatório</p>
+            <div class="stateBox">
+              <label for="state">Qual seu estado?</label>
+              <select id="state" name="state">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA" selected>Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+              </select>
+              <div class="alertText close" id="alertState">
+                <img src="./assets/icons/exclamation.png" alt="" srcset="" />
+                <p>Estado Obrigatório</p>
+              </div>
             </div>
-            <label for="city">Qual sua cidade?</label>
-            <input
-              placeholder="Digite o nome de sua cidade"
-              type="text"
-              class="city"
-              id="city"
-            />
-            <div class="alertText close" id="alertCity">
-              <img src="../../assets/icons/exclamation.png" alt="" srcset="" />
-              <p>Cidade Obrigatório</p>
+            <div class="cityBox">
+              <label for="city">Qual sua cidade?</label>
+              <input
+                placeholder="Digite o nome de sua cidade"
+                type="text"
+                class="city"
+                id="city"
+              />
+              <div class="alertText close" id="alertCity">
+                <img src="./assets/icons/exclamation.png" alt="" srcset="" />
+                <p>Cidade Obrigatória</p>
+              </div>
             </div>
           </div>
           <div class="passwordBox">
-            <label for="password">Digite uma senha</label>
-            <input placeholder="**********" type="password" id="password" />
-            <div class="alertText close" id="alertPassword">
-              <img src="../../assets/icons/exclamation.png" alt="" srcset="" />
-              <p>Senha Obrigatória</p>
+            <div class="firstPassword">
+              <label for="password">Crie uma senha</label>
+              <input placeholder="**********" type="password" id="password" />
+              <div class="alertText close" id="alertPassword">
+                <img src="./assets/icons/exclamation.png" alt="" srcset="" />
+                <p>Senha Obrigatória</p>
+              </div>
+              <div class="alertText close" id="alertPasswordMinimum">
+                <img src="./assets/icons/exclamation.png" alt="" srcset="" />
+                <p>Digite no mínimo 6 caracteres</p>
+              </div>
             </div>
-            <div class="alertText close" id="alertPasswordMinimum">
-              <img src="../../assets/icons/exclamation.png" alt="" srcset="" />
-              <p>Digite no mínimo 6 caracteres</p>
-            </div>
-            <label for="verifyPassword">Confirme sua senha</label>
-            <input
-              placeholder="**********"
-              type="password"
-              id="verifyPassword"
-            />
-            <div class="alertText close" id="alertVerifyPassword">
-              <img src="../../assets/icons/exclamation.png" alt="" srcset="" />
-              <p>As senhas são diferentes</p>
+            <div class="secondPassword">
+              <label for="verifyPassword">Repita sua senha</label>
+              <input
+                placeholder="**********"
+                type="password"
+                id="verifyPassword"
+              />
+              <div class="alertText close" id="alertVerifyPassword">
+                <img src="./assets/icons/exclamation.png" alt="" srcset="" />
+                <p>As senhas são diferentes</p>
+              </div>
             </div>
           </div>
-          <button id="buttonSignup" type="">Cadastrar</button>
+          <div class="buttonsForm">
+            <button id="buttonSignin" type="'">Já tenho Conta</button>
+            <button id="buttonSignup" type="">Cadastrar</button>
+          </div>
         </form>
       </div>
     </div>
     <footer class="rodape">
       <div class="rodape__links">
-          <a href="/frontend-secti/frontend-secti/src/home/index.html">Início</a>
-          <a href="/frontend-secti/frontend-secti/src/curiosities/index.html">História</a>
-          <a href="/frontend-secti/frontend-secti/src/devs/index.html">Desenvolvedores</a>
-          <a href="/frontend-secti/frontend-secti/src/report/index.html">Reportar</a>
+          <a href="./src/home/index.html">Início</a>
+          <a href="./src/curiosities/index.html">História</a>
+          <a href="./src/devs/index.html">Desenvolvedores</a>
+          <a href="./src/report/index.html">Reportar</a>
       </div>
       <div class="rodape__line"></div>
       <div class="rodape__frase-container">
           <h2 class="rodape__frase">Game desenvolvido para o programa de formação Trilhas Inova MA - 2024</h2>
       </div>
   </footer> 
-    <script type="module" src="script.js"></script>
+    <script type="module" src="./src/home/script.js"></script>
   </body>
 </html>

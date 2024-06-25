@@ -1,11 +1,4 @@
-// {
-//     "name": "string",
-//     "email": "string",
-//     "password": "string",
-//     "city": "string",
-//     "state": "string",
-//     "age": "string"
-//   }
+
 
 const buttonSignup = document.getElementById("buttonSignup");
 
@@ -88,6 +81,7 @@ function verifyFields(
   if(password.length < 6){
     alertPasswordMinimum.classList.add("open");
     alertPasswordMinimum.classList.remove("close");
+    return false
   }else{
     
     alertPasswordMinimum.classList.add("close");
@@ -133,6 +127,13 @@ async function Signup() {
       password: password,
       state: state,
     };
+    document.getElementById("nameUser").value = ''
+    document.getElementById("email").value = ''
+    document.getElementById("age").value = ''
+    document.getElementById("state").value = 'MA'
+    document.getElementById("city").value = ''
+    document.getElementById("password").value = ''
+    document.getElementById("verifyPassword").value = ''
     console.log(body)
     const res = await fetch("https://api-3-doors-game.vercel.app/signup", {
       method: "POST",
@@ -148,14 +149,16 @@ async function Signup() {
 }
 
 // 
+const buttonMenuShow = document.getElementById("menuShow").addEventListener("click", menuShow)
 function menuShow() {
   let menuMobile = document.querySelector('.mobile-menu');
+  console.log("chegou aqui")
   if (menuMobile.classList.contains('open')) {
       menuMobile.classList.remove('open');
-      document.querySelector('.icon').src = "/frontend-secti-main/assets/images/menu_white_36dp.svg";
+      document.querySelector('.icon').src = "../../assets/images/menu_white_36dp.svg";
   } else {
       menuMobile.classList.add('open');
-      document.querySelector('.icon').src = "/frontend-secti-main/assets/images/close_white_36dp.svg";
+      document.querySelector('.icon').src = "../../assets/images/close_white_36dp.svg";
   }
 }
 // 

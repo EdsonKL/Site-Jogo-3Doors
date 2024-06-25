@@ -1,48 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="styleHeader.css">
     <title>3Doors: História</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class = "nav-bar">
-            <div class="logo">
-                <img class="logo__jogo" src="/frontend-secti/frontend-secti/assets/images/logo.png" alt="Logo do Jogo">
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"> <a href="/frontend-secti/frontend-secti/src/home/index.html" class="nav-link">Início</a></li>
-                    <li class="nav-item"> <a href="/frontend-secti/frontend-secti/src/curiosities/index.html" class="nav-link">História</a></li>
-                    <li class="nav-item"> <a href="/frontend-secti/frontend-secti/src/devs/index.html" class="nav-link">Desenvolvedores</a></li>
-                    <li class="nav-item"> <a href="/frontend-secti/frontend-secti/src/report/index.html" class="nav-link">Reportar</a></li>
-                </ul>
-            </div>
-
-            <div class="login__button">
-                <button class="login__button__cadastrar"><a href="#">Cadastre-se</a></button>
-                <button class="login__button__entrar"><a href="#">Login</a></button>
-            </div>
-
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="/frontend-secti/frontend-secti/assets/images/menu_white_36dp.svg" alt=""></button>
-            </div>
-        </nav>
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"> <a href="/frontend-secti/src/home/index.html" class="nav-link">Início</a></li>
-                <li class="nav-item"> <a href="/frontend-secti/src/curiosities/index.html" class="nav-link">História</a></li>
-                <li class="nav-item"> <a href="/frontend-secti/src/devs/index.html" class="nav-link">Desenvolvedores</a></li>
-                <li class="nav-item"> <a href="/frontend-secti/src/report/index.html" class="nav-link">Reportar</a></li>
-            </ul>
-
-            <div class="login__button">
-                <button class="login__button__cadastrar"><a href="#">Cadastre-se</a></button>
-                <button class="login__button__entrar"><a href="#">Login</a></button>
-            </div>
+      <nav class="nav-bar">
+        <div class="logo">
+          <img
+            class="logo__jogo"
+            src="../../assets/images/logo.png"
+            alt="Logo do Jogo"
+          />
         </div>
+
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item">
+              <a href="../../index.html" class="nav-link">Início</a>
+            </li>
+            <li class="nav-item">
+              <a href="../curiosities/index.html" class="nav-link">História</a>
+            </li>
+            <li class="nav-item">
+              <a href="../devs/index.html" class="nav-link">Desenvolvedores</a>
+            </li>
+            <li class="nav-item">
+              <a href="../report/index.html" class="nav-link">Reportar</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="login__button">
+          <button class="login__button__cadastrar">
+            <a href="#">Cadastre-se</a>
+          </button>
+          <button class="login__button__entrar"><a href="#">Login</a></button>
+        </div>
+
+        <div class="mobile-menu-icon">
+          <button id="menuShow">
+            <img
+              class="icon"
+              src="../../assets/images/menu_white_36dp.svg"
+              alt=""
+            />
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item">
+            <a href="../../index.html" class="nav-link">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="../curiosities/index.html" class="nav-link">História</a>
+          </li>
+          <li class="nav-item">
+            <a href="../devs/index.html" class="nav-link">Desenvolvedores</a>
+          </li>
+          <li class="nav-item">
+            <a href="../report/index.html" class="nav-link">Reportar</a>
+          </li>
+        </ul>
+
+        <div class="login__button">
+          <button class="login__button__cadastrar">
+            <a href="#">Cadastre-se</a>
+          </button>
+          <button class="login__button__entrar"><a href="#">Login</a></button>
+
+        </div>
+      </div>
     </header>
 
 
