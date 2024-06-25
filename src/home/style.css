@@ -4,8 +4,6 @@
 * {
   padding: 0;
   margin: 0;
-  all: unset;
-
 }
 body {
   text-align: center;
@@ -338,6 +336,8 @@ header {
     border-radius: 8px;
     padding: 6px 16px;
     font-size: 16px;
+    all: unset;
+
   }
   input:focus {
     border: none;
@@ -401,6 +401,8 @@ header {
       border-radius: 8px;
       padding: 6px 16px;
       font-size: 16px;
+      all: unset;
+
     }
     input:focus {
       border: none;
@@ -447,6 +449,8 @@ header {
       height: 48px;
       padding: 6px 16px;
       font-family: "Roboto", sans-serif;
+      all: unset;
+
     }
   }
   @media screen and (max-width: 1225px) {
@@ -513,6 +517,8 @@ header {
       height: 48px;
       padding: 6px 16px;
       font-family: "Roboto", sans-serif;
+      all: unset;
+
     }
   }
   @media screen and (max-width: 1225px) {
@@ -585,6 +591,8 @@ header {
       height: 48px;
       padding: 6px 16px;
       font-family: "Roboto", sans-serif;
+      all: unset;
+
     }
   }
   @media screen and (max-width: 1225px) {
@@ -604,7 +612,7 @@ header {
       }
       input{
         width: 34vw;
-
+        
       }
     }
   }
@@ -615,7 +623,6 @@ header {
         font-size: 18px;
       }
       input{
-        all: unset;
         width: 76vw;
       }
     }
