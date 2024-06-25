@@ -614,6 +614,8 @@ header {
       }
       input {
         width: 248px;
+    appearance: none;
+
       }
     }
   }
@@ -624,6 +626,7 @@ header {
       }
       input{
         width: 34vw;
+    appearance: none;
         
       }
     }
@@ -636,6 +639,8 @@ header {
       }
       input{
         width: 76vw;
+    appearance: none;
+
       }
     }
   }
