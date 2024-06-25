@@ -58,12 +58,10 @@ function getUserFromHTML() {
   document.getElementById("email").value = "";
   document.getElementById("textarea").value = "";
   document.getElementById("buttonReport").innerText = "Enviado";
-  console.log(body);
-  // fazPost(body);
+  fazPost(body);
 }
 
 async function fazPost(body) {
-  console.log(body);
   await fetch("https://api-3-doors-game.vercel.app/sendmail", {
     method: "POST",
     headers: {

@@ -1,5 +1,3 @@
-
-
 const buttonSignup = document.getElementById("buttonSignup");
 
 const nameUser = document.getElementById("nameUser").value;
@@ -78,12 +76,11 @@ function verifyFields(
     alertPassword.classList.add("close");
     alertPassword.classList.remove("open");
   }
-  if(password.length < 6){
+  if (password.length < 6) {
     alertPasswordMinimum.classList.add("open");
     alertPasswordMinimum.classList.remove("close");
-    return false
-  }else{
-    
+    return false;
+  } else {
     alertPasswordMinimum.classList.add("close");
     alertPasswordMinimum.classList.remove("open");
   }
@@ -127,38 +124,43 @@ async function Signup() {
       password: password,
       state: state,
     };
-    document.getElementById("nameUser").value = ''
-    document.getElementById("email").value = ''
-    document.getElementById("age").value = ''
-    document.getElementById("state").value = 'MA'
-    document.getElementById("city").value = ''
-    document.getElementById("password").value = ''
-    document.getElementById("verifyPassword").value = ''
-    console.log(body)
+    document.getElementById("nameUser").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("age").value = "";
+    document.getElementById("state").value = "MA";
+    document.getElementById("city").value = "";
+    document.getElementById("password").value = "";
+    document.getElementById("verifyPassword").value = "";
+    console.log(body);
     const res = await fetch("https://api-3-doors-game.vercel.app/signup", {
       method: "POST",
       headers: {
-        "X-api-key": "T69ve4cPJD4rK23mEpx40LXlwhDf7Y6grwpIL03yMtX2XgiuaZp1C6HkQvgsJUu1",
+        "X-api-key":
+          "T69ve4cPJD4rK23mEpx40LXlwhDf7Y6grwpIL03yMtX2XgiuaZp1C6HkQvgsJUu1",
         "Content-Type": "application/json",
       },
       body: JSON.stringify(body),
     }).then();
-    return 
+    return;
   }
   console.log("chegou aqui pq ta faltando coisa");
 }
 
-// 
-const buttonMenuShow = document.getElementById("menuShow").addEventListener("click", menuShow)
+//
+const buttonMenuShow = document
+  .getElementById("menuShow")
+  .addEventListener("click", menuShow);
 function menuShow() {
-  let menuMobile = document.querySelector('.mobile-menu');
-  console.log("chegou aqui")
-  if (menuMobile.classList.contains('open')) {
-      menuMobile.classList.remove('open');
-      document.querySelector('.icon').src = "../../assets/images/menu_white_36dp.svg";
+  let menuMobile = document.querySelector(".mobile-menu");
+  console.log("chegou aqui");
+  if (menuMobile.classList.contains("open")) {
+    menuMobile.classList.remove("open");
+    document.querySelector(".icon").src =
+      "./assets/images/menu_white_36dp.svg";
   } else {
-      menuMobile.classList.add('open');
-      document.querySelector('.icon').src = "../../assets/images/close_white_36dp.svg";
+    menuMobile.classList.add("open");
+    document.querySelector(".icon").src =
+      "./assets/images/close_white_36dp.svg";
   }
 }
-// 
+//
