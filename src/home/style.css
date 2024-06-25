@@ -328,6 +328,8 @@ header {
     font-size: 14px;
   }
   input {
+    all: unset;
+
     width: 507px;
     height: 48px;
     background-color: #32134e;
@@ -336,7 +338,6 @@ header {
     border-radius: 8px;
     padding: 6px 16px;
     font-size: 16px;
-    all: unset;
 
   }
   input:focus {
@@ -393,6 +394,8 @@ header {
       font-size: 14px;
     }
     input {
+      all: unset;
+
       width: 507px;
       height: 48px;
       background-color: #32134e;
@@ -401,7 +404,6 @@ header {
       border-radius: 8px;
       padding: 6px 16px;
       font-size: 16px;
-      all: unset;
 
     }
     input:focus {
@@ -439,6 +441,8 @@ header {
       font-size: 14px;
     }
     input {
+      all: unset;
+
       background-color: #32134e;
       font-size: 16px;
       color: #eeeef0;
@@ -449,7 +453,6 @@ header {
       height: 48px;
       padding: 6px 16px;
       font-family: "Roboto", sans-serif;
-      all: unset;
 
     }
   }
@@ -499,6 +502,8 @@ header {
       font-size: 14px;
     }
     select {
+      all: unset;
+
       padding: 6px 16px;
       background-color: #32134e;
       border-radius: 4px;
@@ -507,6 +512,8 @@ header {
       color: #eeeef0;
     }
     input {
+      all: unset;
+
       background-color: #32134e;
       font-size: 16px;
       color: #eeeef0;
@@ -517,7 +524,6 @@ header {
       height: 48px;
       padding: 6px 16px;
       font-family: "Roboto", sans-serif;
-      all: unset;
 
     }
   }
@@ -581,6 +587,8 @@ header {
       font-size: 14px;
     }
     input {
+      all: unset;
+
       background-color: #32134e;
       font-size: 16px;
       color: #eeeef0;
@@ -591,7 +599,6 @@ header {
       height: 48px;
       padding: 6px 16px;
       font-family: "Roboto", sans-serif;
-      all: unset;
 
     }
   }
