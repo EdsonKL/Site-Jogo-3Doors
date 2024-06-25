@@ -4,6 +4,8 @@
 * {
   padding: 0;
   margin: 0;
+  all: unset;
+
 }
 body {
   text-align: center;
@@ -602,6 +604,7 @@ header {
       }
       input{
         width: 34vw;
+
       }
     }
   }
@@ -612,6 +615,7 @@ header {
         font-size: 18px;
       }
       input{
+        all: unset;
         width: 76vw;
       }
     }
