@@ -328,7 +328,7 @@ header {
     font-size: 14px;
   }
   input {
-    all: unset;
+    appearance: none;
 
     width: 507px;
     height: 48px;
@@ -394,7 +394,8 @@ header {
       font-size: 14px;
     }
     input {
-      all: unset;
+      appearance: none;
+
 
       width: 507px;
       height: 48px;
@@ -441,7 +442,8 @@ header {
       font-size: 14px;
     }
     input {
-      all: unset;
+      appearance: none;
+
 
       background-color: #32134e;
       font-size: 16px;
@@ -502,7 +504,8 @@ header {
       font-size: 14px;
     }
     select {
-      all: unset;
+      appearance: none;
+
 
       padding: 6px 16px;
       background-color: #32134e;
@@ -512,7 +515,8 @@ header {
       color: #eeeef0;
     }
     input {
-      all: unset;
+      appearance: none;
+
 
       background-color: #32134e;
       font-size: 16px;
@@ -587,7 +591,8 @@ header {
       font-size: 14px;
     }
     input {
-      all: unset;
+      appearance: none;
+
 
       background-color: #32134e;
       font-size: 16px;
@@ -654,6 +659,8 @@ header {
     }
   }
   #buttonSignup {
+    appearance: none;
+
     display: flex;
     margin-top: 10px;
     width: 150px;
@@ -682,6 +689,8 @@ header {
     background-color: #632694;
   }
   #buttonSignin {
+    appearance: none;
+
     display: flex;
     margin-top: 10px;
     width: 190px;
