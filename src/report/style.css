@@ -56,7 +56,7 @@ header {
 .nav-link {
   text-decoration: none;
   color: white;
-  padding: 6px;
+  padding-bottom: 6px;
   transform: 2ms ease-in;
   position: relative;
 }
@@ -659,6 +659,10 @@ header {
     font-size: 16px;
     color: #eeeeee;
     cursor: pointer;
+    transition: all 0.5s;
+  }
+  #buttonReport:hover{
+    background-color: #31104b;
   }
   @media screen and (min-width: 600px) and (max-width: 1038px) {
     #buttonReport {

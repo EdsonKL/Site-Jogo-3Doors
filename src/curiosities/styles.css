@@ -57,7 +57,7 @@ header {
 .nav-link {
   text-decoration: none;
   color: white;
-  padding: 6px;
+  padding-bottom: 6px;
   transform: 2ms ease-in;
   position: relative;
 }

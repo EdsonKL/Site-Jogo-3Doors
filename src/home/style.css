@@ -52,7 +52,8 @@ header {
 .nav-link {
   text-decoration: none;
   color: white;
-  padding: 6px;
+  padding-bottom: 6px;
+
   transform: 2ms ease-in;
   position: relative;
 }
@@ -676,6 +677,8 @@ header {
     font-size: 18px;
     color: #eeeeee;
     cursor: pointer;
+    transition: all 0.5s;
+
   }
   @media screen and (min-width: 0px) and (max-width: 500px) {
     #buttonSignup {
@@ -703,6 +706,8 @@ header {
     font-size: 18px;
     color: #7f32c0;
     cursor: pointer;
+    transition: all 0.5s;
+
   }
   @media screen and (min-width: 0px) and (max-width: 500px) {
     #buttonSignin {

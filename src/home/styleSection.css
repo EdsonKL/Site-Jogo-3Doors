@@ -105,6 +105,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s;
+}
+.div-iniciar:hover{
+  background-color: #572283;
 }
 .iniciar-jogo {
   font-family: var(--fonte-primaria);

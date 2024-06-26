@@ -46,14 +46,7 @@ function verifyFields(
     alertEmail.classList.add("close");
     alertEmail.classList.remove("open");
   }
-  if (age == "") {
-    alertAge.classList.add("open");
-    alertAge.classList.remove("close");
-    return false;
-  } else {
-    alertAge.classList.add("close");
-    alertAge.classList.remove("open");
-  }
+  
   if (state == "") {
     alertState.classList.add("open");
     alertState.classList.remove("close");
@@ -61,6 +54,14 @@ function verifyFields(
   } else {
     alertState.classList.add("close");
     alertState.classList.remove("open");
+  }
+  if (age == "" || age == null || age == 0) {
+    alertAge.classList.add("open");
+    alertAge.classList.remove("close");
+    return false;
+  } else {
+    alertAge.classList.add("close");
+    alertAge.classList.remove("open");
   }
   if (city == "") {
     alertCity.classList.add("open");
