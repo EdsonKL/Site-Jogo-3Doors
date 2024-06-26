@@ -53,6 +53,28 @@ header {
   color: #ffffff;
   font-weight: 400;
 }
+.nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 6px;
+  transform: 2ms ease-in;
+  position: relative;
+}
+
+.nav-link::before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0px;
+  height: 1px;
+  background-color: #863ac7;
+  transition: all 0.5s ease;
+}
+
+.nav-link:hover:before {
+  width: 100%;
+}
 
 .login__button__cadastrar {
   border: none;
@@ -60,7 +82,12 @@ header {
   padding: 10px 20px;
   border-radius: 5px;
   margin-right: 10px;
+  transition: all 0.5s;
 }
+.login__button__cadastrar:hover {
+  background-color: #471d77;
+}
+
 .login__button__cadastrar a {
   text-decoration: none;
   color: #ffffff;
@@ -76,6 +103,10 @@ header {
   padding: 10px 20px;
   border-radius: 4px;
   margin-right: 0;
+  transition: all 0.5s;
+}
+.login__button__entrar:hover {
+  background-color: #7f32c0;
 }
 
 .icon {
@@ -397,7 +428,6 @@ header {
     .nameBox {
       label {
         font-size: 16px;
-
       }
       input {
         font-size: 14px;
@@ -522,8 +552,8 @@ header {
       label {
         font-size: 18px;
       }
-      .radioBox{
-        label{
+      .radioBox {
+        label {
           font-size: 16px;
         }
       }
@@ -537,8 +567,8 @@ header {
       label {
         font-size: 16px;
       }
-      .radioBox{
-        label{
+      .radioBox {
+        label {
           font-size: 14px;
         }
       }

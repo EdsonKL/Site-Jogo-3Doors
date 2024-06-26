@@ -4,9 +4,8 @@
 * {
   padding: 0;
   margin: 0;
-
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
@@ -46,39 +45,63 @@ header {
   list-style: none;
 }
 .nav-item {
-  margin: 0 15px;
+  margin: 0 12px;
   color: #ffffff;
   text-decoration: none;
 }
 .nav-link {
   text-decoration: none;
-  font-size: 1.4rem;
-  color: #ffffff;
-  font-weight: 400;
+  color: white;
+  padding: 6px;
+  transform: 2ms ease-in;
+  position: relative;
+}
+
+.nav-link::before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0px;
+  height: 1px;
+  background-color: #863ac7;
+  transition: all 0.5s ease;
+}
+
+.nav-link:hover:before {
+  width: 100%;
 }
 
 .login__button__cadastrar {
   border: none;
-  background-color: #7F32C0;
+  background-color: #7f32c0;
   padding: 10px 20px;
   border-radius: 5px;
   margin-right: 10px;
+  transition: all 0.5s;
+}
+.login__button__cadastrar:hover {
+  background-color: #471d77;
 }
 .login__button__cadastrar a {
   text-decoration: none;
   color: #ffffff;
   font-weight: 300;
   font-size: 1.3rem;
-  font-family: "Poppins", sans-serif;;
+  font-family: "Poppins", sans-serif;
 }
 
 .login__button__entrar {
   border: none;
   background-color: #211232;
-  border: 2px solid #7F32C0;
+  border: 2px solid #7f32c0;
   padding: 10px 20px;
   border-radius: 4px;
   margin-right: 0;
+  transition: all 0.5s;
+}
+.login__button__entrar:hover {
+  background-color: #7f32c0;
 }
 
 .icon {
@@ -98,11 +121,11 @@ header {
 }
 
 .mobile-menu {
-  display: none; 
+  display: none;
 }
 
 .rodape {
-  background-color: #32134E;
+  background-color: #32134e;
   color: white;
   padding: 60px;
   text-align: center;
@@ -146,95 +169,94 @@ header {
   width: 100%;
 }
 
-
 @media screen and (max-width: 1260px) {
   .nav-bar {
-      padding: 4rem 6rem;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
+    padding: 4rem 6rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
   .logo__jogo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .nav-item {
-      display: none;
+    display: none;
   }
   .login-button {
-      display: none;
+    display: none;
   }
   .login__button__cadastrar {
-      display: none;
+    display: none;
   }
   .login__button__entrar {
-      display: none;
+    display: none;
   }
   .mobile-menu-icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 60px;
-      height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
   }
   .mobile-menu-icon button {
-      background-color:#211232;
-      border: none;
-      cursor: pointer;
-      padding: 30px;
+    background-color: #211232;
+    border: none;
+    cursor: pointer;
+    padding: 30px;
   }
   .mobile-menu ul {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
   }
   .mobile-menu .nav-item {
-      display: block;
-      padding-top: 1.4rem;
-      font-size: 26px;
+    display: block;
+    padding-top: 1.4rem;
+    font-size: 26px;
   }
   .mobile-menu .login-button {
-      display: block;
-      padding: 1rem 2rem;
+    display: block;
+    padding: 1rem 2rem;
   }
   .mobile-menu .login-button button {
-      width: 100%;
+    width: 100%;
   }
   .open {
-      display: block;
+    display: block;
   }
   .rodape {
-      padding: 10px;
+    padding: 10px;
   }
 
   .rodape__frase {
-      font-family: "Poppins", sans-serif;
-      font-size: 15px;
-      margin-top: 20px;
-      font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: 300;
   }
 
   .rodape__links {
-      text-align: left;
-      margin-bottom: 10px;
+    text-align: left;
+    margin-bottom: 10px;
   }
 
   .rodape__links a {
-      display: block;
-      margin: 8px 0;
-      font-size: 15px;
-      font-family: "Roboto", sans-serif;
-      font-weight: 400;
+    display: block;
+    margin: 8px 0;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
   }
 
   .rodape__line {
-      margin: 10px 0;
+    margin: 10px 0;
   }
 
   .rodape__frase-container {
-      justify-content: center; 
+    justify-content: center;
   }
 }
 
@@ -266,30 +288,29 @@ header {
     font-size: 22px;
   }
 }
-@media screen  and (min-width: 700px) and (max-width: 1225px) {
+@media screen and (min-width: 700px) and (max-width: 1225px) {
   #mainSignup {
     flex-direction: column;
-  padding: 100px 10px;
+    padding: 100px 10px;
   }
   .textMain {
     width: 600px;
   }
 }
-@media screen  and (min-width: 0px) and (max-width: 700px) {
+@media screen and (min-width: 0px) and (max-width: 700px) {
   #mainSignup {
     flex-direction: column;
     padding: 20px 5px;
     align-items: center;
-
   }
   .textMain {
     width: 100%;
     align-items: center;
 
-    h1{
+    h1 {
       font-size: 7.5vw;
     }
-    p{
+    p {
       text-align: center;
       font-size: 18px;
       width: 85%;
@@ -355,12 +376,12 @@ header {
     }
   }
 }
-@media screen  and (min-width: 0px) and (max-width: 700px) {
-  .nameBox{
-    label{
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  .nameBox {
+    label {
       font-size: 18px;
     }
-    input{
+    input {
       width: 75vw;
     }
   }
@@ -418,12 +439,12 @@ header {
       }
     }
   }
-  @media screen  and (min-width: 0px) and (max-width: 700px) {
-    .emailBox{
-      label{
+  @media screen and (min-width: 0px) and (max-width: 700px) {
+    .emailBox {
+      label {
         font-size: 18px;
       }
-      input{
+      input {
         width: 75vw;
       }
     }
@@ -461,12 +482,12 @@ header {
       }
     }
   }
-  @media screen  and (min-width: 0px) and (max-width: 700px) {
-    .ageBox{
-      label{
+  @media screen and (min-width: 0px) and (max-width: 700px) {
+    .ageBox {
+      label {
         font-size: 18px;
       }
-      input{
+      input {
         width: 75vw;
       }
     }
@@ -527,33 +548,33 @@ header {
       }
     }
   }
-  @media screen  and (min-width: 500px) and (max-width: 700px) {
-    .addressBox{
-      label{
+  @media screen and (min-width: 500px) and (max-width: 700px) {
+    .addressBox {
+      label {
         font-size: 18px;
       }
-      select{
+      select {
         width: 30vw;
       }
-      input{
+      input {
         width: 42vw;
       }
     }
   }
   @media screen and (min-width: 0px) and (max-width: 500px) {
-    .addressBox{
+    .addressBox {
       flex-direction: column;
-      select{
+      select {
         width: 82vw;
       }
-      input{
+      input {
         width: 76vw;
       }
-      label{
-      font-size: 15px;   
+      label {
+        font-size: 15px;
+      }
     }
   }
-}
   .passwordBox {
     display: flex;
     flex-direction: row;
@@ -599,24 +620,23 @@ header {
       }
     }
   }
-  @media screen  and (min-width: 500px) and (max-width: 700px) {
-    .passwordBox{
-      label{
+  @media screen and (min-width: 500px) and (max-width: 700px) {
+    .passwordBox {
+      label {
         font-size: 18px;
       }
-      input{
+      input {
         width: 34vw;
-
       }
     }
   }
-  @media screen  and (min-width: 0px) and (max-width: 500px) {
-    .passwordBox{
+  @media screen and (min-width: 0px) and (max-width: 500px) {
+    .passwordBox {
       flex-direction: column;
-      label{
+      label {
         font-size: 18px;
       }
-      input{
+      input {
         width: 76vw;
       }
     }
@@ -634,7 +654,7 @@ header {
     }
   }
   @media screen and (min-width: 0px) and (max-width: 500px) {
-    .buttonsForm{
+    .buttonsForm {
       display: flex;
       width: 100%;
       flex-direction: column-reverse;
@@ -658,11 +678,10 @@ header {
     cursor: pointer;
   }
   @media screen and (min-width: 0px) and (max-width: 500px) {
-    #buttonSignup{
+    #buttonSignup {
       font-size: 22px;
       width: 100%;
       height: 62px;
-
     }
   }
   #buttonSignup:hover {
@@ -686,7 +705,7 @@ header {
     cursor: pointer;
   }
   @media screen and (min-width: 0px) and (max-width: 500px) {
-    #buttonSignin{
+    #buttonSignin {
       font-size: 22px;
       width: 100%;
       margin-top: 0;
@@ -698,7 +717,7 @@ header {
   }
 }
 @media screen and (min-width: 0px) and (max-width: 1225px) {
-  .formBox form{
+  .formBox form {
     width: 100%;
     align-items: center;
   }
