@@ -691,10 +691,11 @@ header {
     background-color: #632694;
   }
   #buttonSignin {
+    text-decoration: none;
     display: flex;
     margin-top: 10px;
     width: 190px;
-    height: 56px;
+    height: 25px;
     background-color: #1d112a;
     border: 4px solid #7f32c0;
     border-radius: 8px;
@@ -712,9 +713,9 @@ header {
   @media screen and (min-width: 0px) and (max-width: 500px) {
     #buttonSignin {
       font-size: 22px;
-      width: 100%;
+      width: 90%;
       margin-top: 0;
-      height: 62px;
+      height: 38px;
     }
   }
   #buttonSignin:hover {
